@@ -1322,4 +1322,109 @@ article.post-content img {
    box-shadow: none;
    position: relative;
    top:40px;
+   padding: 2em 0;
 }
+
+
+#ds-reset .ds-avatar img {
+  width: 54px !important;
+  height: 54px !important;
+  -webkit-border-radius: 27px !important;
+  -moz-border-radius: 27px !important;
+  border-radius: 27px !important;
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  -moz-transition: -moz-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+}
+#ds-reset .ds-avatar img:hover {
+  -webkit-transform: rotateZ(360deg);
+  -moz-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+}
+
+
+#ds-reset .ds-powered-by {
+  display: none;
+}
+
+#ds-thread {
+  clear: none !important;
+  float: left;
+  margin-top: 0;
+  width: 100%;
+}
+
+#ds-thread #ds-reset .ds-meta {
+  display: none;
+}
+
+#ds-thread #ds-reset li.ds-tab a,
+#ds-thread #ds-reset li.ds-tab a.ds-current,
+#ds-thread #ds-reset li.ds-tab a:hover {
+  border: 0px solid transparent;
+  border-radius: 0;
+  background-color: #DF574B;
+  color: #3D3D3D;
+}
+
+
+
+#ds-thread #ds-reset li.ds-tab a {
+  padding: 1em;
+}
+
+#ds-thread #ds-reset li.ds-tab {
+  display: inline;
+  font-size: 13px;
+  margin: 0 5px 0 0;
+  padding: 5px 10px;
+}
+
+
+.reset-all #ds-thread #ds-reset .ds-sort a ,
+.reset-all #ds-thread #ds-reset li.ds-tab a.ds-current
+ {
+  background-color: transparent;
+  border: 1px solid rgba(0,0,0,0);
+  padding: .3em 1em;
+
+}
+
+
+.reset-all #ds-thread #ds-reset .ds-sort a:hover,
+.reset-all #ds-thread #ds-reset li.ds-tab a:hover {
+  background-color: transparent;
+  border: 1px solid rgba(0,0,0,0);
+  padding: .3em 1em;
+
+
+.reset-all #ds-thread #ds-reset .ds-sort a {
+  margin: 0 2px;
+}
+
+.reset-all #ds-thread #ds-reset .ds-textarea-wrapper textarea, 
+.reset-all #ds-thread #ds-reset .ds-textarea-wrapper .ds-hidden-text{
+
+}
+
+.reset-all #ds-thread #ds-reset .ds-post-button {
+  background-color: transparent;
+  background-image: none;
+}
+
+.reset-all #ds-thread #ds-reset .ds-textarea-wrapper,
+.reset-all #ds-reset .ds-gradient-bg {
+  background-image: none;
+}
+
+.reset-all {
+  padding: 20px 0;
+}
+
+
+
+
+
+
+
+

@@ -6,7 +6,7 @@ layout: default
 <div class="p2">
   <header class="post-header p2">
   	
-    <h1 class="post-title hvr-card inline-block p2 bg-white"><a href="{{ post.url | prepend: site.baseurl }}">{{ page.title }}</a></h1>
+    <h1 class="post-title inline-block py2 bg-white"><a href="{{ post.url | prepend: site.baseurl }}">{{ page.title }}</a></h1>
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
@@ -14,5 +14,10 @@ layout: default
     {{ content }}
   </article>
 
+  <div class="fb-share-button p2" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button"></div>
+
+	<div class="reset-all">
+	<div id="ds-thread" class="ds-thread" data-url="{{ page.url }}" data-title="{{ page.title }}" data-thread-key="{{ page.title }}"></div>
+	</div>
 </div>
 </div>
