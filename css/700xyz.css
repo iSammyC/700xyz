@@ -1354,13 +1354,13 @@ article.post-content img {
   width: 100%;
 }
 
-#ds-thread #ds-reset .ds-meta {
+#ds-reset .ds-meta {
   display: none;
 }
 
-#ds-thread #ds-reset li.ds-tab a,
-#ds-thread #ds-reset li.ds-tab a.ds-current,
-#ds-thread #ds-reset li.ds-tab a:hover {
+#ds-reset li.ds-tab a,
+#ds-reset li.ds-tab a.ds-current,
+#ds-reset li.ds-tab a:hover {
   border: 0px solid transparent;
   border-radius: 0;
   background-color: #DF574B;
@@ -1391,34 +1391,26 @@ article.post-content img {
 }
 
 
-.reset-all #ds-thread #ds-reset .ds-sort a:hover,
-.reset-all #ds-thread #ds-reset li.ds-tab a:hover {
+#ds-reset .ds-sort a:hover,
+#ds-reset li.ds-tab a:hover {
   background-color: transparent;
   border: 1px solid rgba(0,0,0,0);
   padding: .3em 1em;
 
 
-.reset-all #ds-thread #ds-reset .ds-sort a {
+#ds-reset .ds-sort a {
   margin: 0 2px;
 }
 
-.reset-all #ds-thread #ds-reset .ds-textarea-wrapper textarea, 
-.reset-all #ds-thread #ds-reset .ds-textarea-wrapper .ds-hidden-text{
 
-}
-
-.reset-all #ds-thread #ds-reset .ds-post-button {
+#ds-reset .ds-post-button {
   background-color: transparent;
   background-image: none;
 }
 
-.reset-all #ds-thread #ds-reset .ds-textarea-wrapper,
-.reset-all #ds-reset .ds-gradient-bg {
+#ds-reset .ds-textarea-wrapper,
+#ds-reset .ds-gradient-bg {
   background-image: none;
-}
-
-.reset-all {
-  padding: 20px 0;
 }
 
 
