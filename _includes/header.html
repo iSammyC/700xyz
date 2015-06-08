@@ -1,13 +1,17 @@
 <header>
 
   
-  <nav class="clearfix silver bg-navy">
-  <div class="sm-col p2 red">
-  <a href="/" class="button button-transparent tlg">700apps</a>
+  <nav class="clearfix white bg-navy">
+  <div class="container">
+  <div class="col white py2 pl2 site-name">
+  <a href="/" class="button button-transparent tlg">700apps.<span class="red">x</span><span class="yellow">y</span><span class="blue">z</span></a>
   </div>
+  
 
-  <div class="sm-col-right py2">
-    <a href="/about" class="button button-transparent">About</a>
+  <div class="col-right py2 ">
+    <a href="/about" class="t300 button button-transparent px2">About</a>
+    <a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="t300 button button-transparent px2">RSS</a>
+  </div>
   </div>
 </nav>
 

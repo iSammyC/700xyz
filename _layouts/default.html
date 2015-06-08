@@ -4,10 +4,11 @@
   {% include head.html %}
 
   <body>
+  <div class="flex flex-column" style="min-height:100vh;">
 
     {% include header.html %}
 
-    <div class="page-content">
+    <div class="page-content flex-auto">
       <div class="wrapper">
         {{ content }}
       </div>
@@ -15,6 +16,7 @@
 
     {% include footer.html %}
 
+  </div>
   </body>
 
 </html>
