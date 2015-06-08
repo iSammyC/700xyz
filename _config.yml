@@ -2,8 +2,8 @@
 title: 700apps
 email: sammycheung@me.com
 description: talk apps
-baseurl: 
-url: "http://700apps.xyz" # the base hostname & protocol for your site
+baseurl: /
+url: http://700apps.xyz
 twitter_username: sammycheung
 github_username:  iSammyC
 
