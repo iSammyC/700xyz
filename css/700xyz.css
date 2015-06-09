@@ -163,14 +163,16 @@ td { vertical-align: top }
 /* Basscss Base Typography */
 
 body {
-  font-family: 'Fira Sans','Roboto', Helvetica, sans-serif;
+  font-family: 'Fira Sans','Roboto',"Hiragino Sans GB", "Microsoft YaHei",
+             "WenQuanYi Micro Hei", Helvetica, sans-serif;
   font-weight: 300;
   line-height: 1.5;
   font-size: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Fira Sans','Merriweather', Georgia, serif;
+  font-family: 'Fira Sans','Merriweather',"Hiragino Sans GB", "Microsoft YaHei",
+             "WenQuanYi Micro Hei", Georgia, serif;
   font-weight: 600;
   line-height: 1.25;
   margin-top: 1em;
@@ -713,7 +715,6 @@ a {
 }
 
 a:hover {
-  
   background-color: rgba(253, 179, 180, .2);
   text-decoration: none;
 }
@@ -1055,25 +1056,25 @@ input[type=range] {
 
 .border-top {
   border-top-style: solid;
-  border-top-width: 2px;
+  border-top-width: 1px;
   border-top-color: inherit;
 }
 
 .border-right {
   border-right-style: solid;
-  border-right-width: 2px;
+  border-right-width: 1px;
   border-right-color: inherit;
 }
 
 .border-bottom {
   border-bottom-style: solid;
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
   border-bottom-color: inherit;
 }
 
 .border-left {
   border-left-style: solid;
-  border-left-width: 2px;
+  border-left-width: 1px;
   border-left-color: inherit;
 }
 
@@ -1093,7 +1094,7 @@ input[type=range] {
 
 .black, .dark-gray   { color: #111 }
 .gray, .mid-gray     { color: #aaa }
-.silver, .light-gray { color: #ddd }
+.silver, .light-gray { color:  }
 .white { color: #fff }
 
 .aqua  { color: #7fdbff }
@@ -1103,10 +1104,7 @@ input[type=range] {
 .green { color: #2ecc40 }
 .olive { color: #3d9970 }
 .lime  { color: #01ff70 }
-
-
 .orange  { color: #ff851b }
-
 .fuchsia { color: #f012be }
 .purple  { color: #b10dc9 }
 .maroon  { color: #85144b }
@@ -1172,8 +1170,10 @@ input[type=range] {
 .muted { opacity: .5 }
 
 
-.serif { font-family: 'Fira Mono', Georgia, serif }
-.sans  { font-family: 'Fira Sans', Helvetica, sans-serif }
+.serif { font-family: 'Fira Mono',"Hiragino Sans GB", "Microsoft YaHei",
+             "WenQuanYi Micro Hei", Georgia, serif }
+.sans  { font-family: 'Fira Sans',"Hiragino Sans GB", "Microsoft YaHei",
+             "WenQuanYi Micro Hei", Helvetica, sans-serif }
 
 .fuchsia a:not(.button) { color: #f012be }
 .maroon a:not(.button) { color: #85144b }
@@ -1420,11 +1420,5 @@ article.post-content img {
 .reset-all {
   padding: 20px 0;
 }
-
-
-
-
-
-
 
 
