@@ -1,25 +1,31 @@
 ---
 layout: default
 ---
-<div class="post container">
+<div class="post container bg-white border-simple">
 
-<div class="p2">
+<div class="article-body">
   <header class="post-header p2">
   	<div class="center">
-    <h1 class="post-title inline-block py2"><a href="{{ post.url | prepend: site.baseurl }}" class="black">{{ page.title }}</a></h1>
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <h1 class="post-title py1 m0"><a href="{{ post.url | prepend: site.baseurl }}" class="black">{{ page.title }}</a></h1>
+    
     </div>
   </header>
 
-  <div class="app-infocard fixed right-0 top-0" >
+  <div class="app-infocard">
     <a href="{{ page.link }}" style="background-color: transparent;"><img src="http://7xixe7.com1.z0.glb.clouddn.com/15-6-9/16786407-Download_on_the_App_Store_Badge_US-UK_135x40.svg"></a>
-    </div>
+  </div>
 
   <article class="post-content p2">
     {{ content }}
   </article>
 
+  
+
+
+
   <div class="fb-share-button p2" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button"></div>
+<!--  <wb:share-button appkey="2273335483" addition="simple" type="icon" pic="http%3A%2F%2F7xixe7.com1.z0.glb.clouddn.com%2F15-6-9%2F8893646.jpg"></wb:share-button> -->
 
 	<div class="reset-all">
 	<div id="ds-thread" class="ds-thread py4" data-url="{{ page.url }}" data-title="{{ page.title }}" data-thread-key="{{ page.title }}"></div>
