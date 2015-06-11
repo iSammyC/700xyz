@@ -163,23 +163,23 @@ td { vertical-align: top }
 /* Basscss Base Typography */
 
 body {
-  font-family: Exo ,'Roboto',"Hiragino Sans GB", "Microsoft YaHei",
+  font-family: "Fira Sans" ,'Roboto',"Hiragino Sans GB", "Microsoft YaHei",
              "WenQuanYi Micro Hei", Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   font-size: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Exo,'Merriweather',"Hiragino Sans GB", "Microsoft YaHei",
+  font-family: "Fira Sans" ,'Merriweather',"Hiragino Sans GB", "Microsoft YaHei",
              "WenQuanYi Micro Hei", Georgia, serif;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em;
 }
 
-p, dl, ol, ul {
+p, dl, ol, ul, .p {
   font-size: 18px;
   font-size: 1.125rem;
   margin-top: 0;

@@ -5,7 +5,7 @@ layout: default
 
 <div class="clearfix mxn2">
 
-<div class="sm-col sm-col-12 md-col-10 px2 ">
+<div class="sm-col sm-col-12 md-col-9 px2 ">
 
   <header class="post-header bg-white py2 px3 " style="box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);">
     <div class="clearfix">
@@ -14,6 +14,24 @@ layout: default
     <p class="post-meta tsm maroon">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
     </div>
     
+    <div class="md-hide mb3">
+    
+    <div class="left">
+    <a href="{{ page.dllink }}"> <img src="{{ page.image }}" class=" border border-transparent " height="100" /></a>
+    
+    </div>
+
+    <div class="right" style="padding-top:35px;">
+    <div class="py2">
+    by <a href="{{ page.website }}" class="gray p1">{{ page.seller }}</a>
+    </div>
+    <div>
+    <a href="{{ page.dllink }}" class="bold navy p1 col-6  bg-yellow  ">App Store | {{ page.price }}</a>
+    <a href="/{{ page.categories }}" class="bold navy p1 col-6 center bg-orange  ">{{ page.categories }}</a>
+    </div>
+    </div>
+
+    </div>
 
   </div>
   </header>
@@ -46,25 +64,27 @@ layout: default
 </div>
 
 
-<div id="app-info" class="sm-col sm-col-0 md-col-2  md-show" style="box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);">
+<div id="app-info" class="sm-col sm-col-0 md-col-3  md-show" style="box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);">
 
 <div class="p2 bg-white" >
     <a href="/"> <img src="{{ page.image }}" class="mb2 border border-transparent" /></a>
     <h1 class="h3 mt0">{{ page.title }}</h1>
-    by <a href="{{ page.website }}" class="gray inline-block p1">{{ page.seller }}</a>
+    by <a href="{{ page.website }}" class="inline-block p1">{{ page.seller }}</a>
   </div>
 
-    <div class="bg-darken-2 p2">
+    <div class="bg-darken-2">
 
-  <a href="{{ page.dllink }}" class="bold white block py2">App Store | {{ page.price }}</a>
+  <a href="{{ page.dllink }}" class="bold white block center bg-yellow py2">App Store | {{ page.price }}</a>
   
-  <a href="/{{ page.categories }}" class="bold white  block py2   ">{{ page.categories }}</a>
+  <a href="/{{ page.categories }}" class="bold white block center bg-orange  py2   ">{{ page.categories }}</a>
 
  
 
 </div>
 
 </div>
+
+
 
 </div>
 
