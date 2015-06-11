@@ -3,17 +3,9 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="bg-silver">
   <!-- Google Analystics -->
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-6546661-4', 'auto');
-  ga('send', 'pageview');
-  </script>
 
 
   <!-- Facebook share button -->
@@ -28,7 +20,7 @@
 
   <!-- Duoshuo Comment System-->
   <script type="text/javascript">
-var duoshuoQuery = {short_name:"700apps"};
+    var duoshuoQuery = {short_name:"700apps"};
   (function() {
     var ds = document.createElement('script');
     ds.type = 'text/javascript';ds.async = true;
@@ -43,11 +35,39 @@ var duoshuoQuery = {short_name:"700apps"};
 
     {% include header.html %}
 
-    <div class="page-content flex-auto">
+    <div class="page-content flex-auto py4 px2">
       <div class="wrapper">
         {{ content }}
       </div>
     </div>
+
+    <script type="text/javascript">
+    var qrcode = new QRCode("qrcode");
+
+function makeCode () {    
+  var elText = document.getElementById("text");
+  
+  if (!elText.value) {
+    alert("Input a text");
+    elText.focus();
+    return;
+  }
+  
+  qrcode.makeCode(elText.value);
+}
+
+makeCode();
+
+$("#text").
+  on("blur", function () {
+    makeCode();
+  }).
+  on("keydown", function (e) {
+    if (e.keyCode == 13) {
+      makeCode();
+    }
+  });
+</script>
 
     {% include footer.html %}
 

@@ -1,28 +1,71 @@
 ---
 layout: default
 ---
-<div class="post container">
+<div class="post container py4">
 
-<div class="p2">
-  <header class="post-header p2">
-  	<div class="center">
-    <h1 class="post-title inline-block py2"><a href="{{ post.url | prepend: site.baseurl }}" class="black">{{ page.title }}</a></h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+<div class="clearfix mxn2">
+
+<div class="sm-col sm-col-12 md-col-10 px2 ">
+
+  <header class="post-header bg-yellow py2 px3 " style="box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);">
+    <div class="clearfix">
+  	<div class="col-7 py2 inline-block">
+    <h1 class="post-title m0"><a href="{{ post.url | prepend: site.baseurl }}" class="black">{{ page.title }}</a></h1>
+    <p class="post-meta tsm silver">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
     </div>
+    
+
+  </div>
   </header>
 
-  <div class="app-infocard fixed right-0 top-0" >
-    <a href="{{ page.link }}" style="background-color: transparent;"><img src="http://7xixe7.com1.z0.glb.clouddn.com/15-6-9/16786407-Download_on_the_App_Store_Badge_US-UK_135x40.svg"></a>
-    </div>
-
-  <article class="post-content p2">
+  <article class="post-content px3 py4 bg-white mt2" style="box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);">
     {{ content }}
   </article>
 
-  <div class="fb-share-button p2" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button"></div>
-
-	<div class="reset-all">
-	<div id="ds-thread" class="ds-thread py4" data-url="{{ page.url }}" data-title="{{ page.title }}" data-thread-key="{{ page.title }}"></div>
+  <div class="social-bar">
+     <ul class="block py2 list-reset">
+    <li class="inline-block p1"> <a href="/" class="aqua"> <i class="fa fa-twitter"></i>
+</li>
+    <li class="inline-block p1"> <a href="/" class="blue"> <i class="fa fa-facebook"></i> </a></li>
+    <li class="inline-block p1"> <a href="/" class="red"> <i class="fa fa-weibo" ></i> </a></li>
+    <li class="inline-block p1"> <a href="/" class="green wechat"> <i class="fa fa-wechat"></i> </a></li>
+  </ul>
 	</div>
+
+  
+
+<input id="text" type="text" value="http://700apps.xyz{{ page.url }}" style="width:80%" class="hide" /><br />
+<div id="qrcode"></div>
+  
+
+  
+	<div id="ds-thread" class="ds-thread" data-url="{{ page.url }}" data-title="{{ page.title }}" data-thread-key="{{ page.title }}">
+    </div>
+ 
+	
 </div>
+
+
+<div id="app-info" class="sm-col sm-col-0 md-col-2  md-show" style="box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);">
+
+<div class="p2 bg-white" >
+    <a href="/"> <img src="{{ page.image }}" class="mb2 border border-transparent" /></a>
+    <h1 class="h3 mt0">{{ page.title }}</h1>
+    by <a href="{{ page.website }}" class="gray inline-block p1">{{ page.seller }}</a>
+  </div>
+
+    <div class="bg-darken-2 p2">
+
+  <a href="{{ page.dllink }}" class="bold white block py2">App Store | {{ page.price }}</a>
+  
+  <a href="/{{ page.categories }}" class="bold white  block py2   ">{{ page.categories }}</a>
+
+ 
+
+</div>
+
+</div>
+
+</div>
+
 </div>

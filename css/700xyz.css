@@ -4,7 +4,7 @@
  * Basscss theme
  *
  */
-@import url(http://fonts.googleapis.com/css?family=Grand+Hotel|Roboto+Mono:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,600,700,400italic,600italic,700italic);
 
 body, button { margin: 0 }
 
@@ -163,17 +163,17 @@ td { vertical-align: top }
 /* Basscss Base Typography */
 
 body {
-  font-family: 'Fira Sans','Roboto',"Hiragino Sans GB", "Microsoft YaHei",
+  font-family: Cabin,'Roboto',"Hiragino Sans GB", "Microsoft YaHei",
              "WenQuanYi Micro Hei", Helvetica, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   font-size: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Fira Sans','Merriweather',"Hiragino Sans GB", "Microsoft YaHei",
+  font-family: Cabin,'Merriweather',"Hiragino Sans GB", "Microsoft YaHei",
              "WenQuanYi Micro Hei", Georgia, serif;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em;
@@ -347,9 +347,11 @@ h6, .h6 { font-size: 14px; font-size: .875rem }
 .pl2 {padding-left: 1rem; padding-left: 16px;}
 /* Basscss Utility Responsive States */
 
-.sm-show, .md-show, .lg-show {
+.sm-show, .md-show, .lg-show  {
   display: none !important
 }
+
+
 
 @media (min-width: 40em) {
   .sm-show { display: block !important }
@@ -422,7 +424,7 @@ h6, .h6 { font-size: 14px; font-size: .875rem }
 /* Basscss Grid */
 
 .container {
-  max-width: 64em;
+  max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -715,7 +717,7 @@ a {
 }
 
 a:hover {
-  background-color: rgba(253, 179, 180, .2);
+  color: currentColor;
   text-decoration: none;
 }
 
@@ -1050,7 +1052,7 @@ input[type=range] {
 
 .border {
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   border-color: inherit;
 }
 
@@ -1240,7 +1242,7 @@ input[type=range] {
 
 
 
-.tsm, ,tsm p {
+.tsm, .tsm p {
   font-size: 12px;
 }
 
@@ -1311,9 +1313,11 @@ box-shadow: 0 2px 2px 0 rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.3);
 }
 
 article.post-content img {
-    height: 200px;
+    height: 170px;
     border-radius: 20%;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 #page img {
@@ -1324,6 +1328,17 @@ article.post-content img {
    top:40px;
    padding: 2em 0;
 }
+
+#qrcode {
+ display: none; 
+ width:70px;
+  height:70px;
+  margin-top:15px;}
+
+a.wechat:hover > #qrcode {
+  display: block;
+}
+
 
 
 #ds-reset .ds-avatar img {
@@ -1336,6 +1351,7 @@ article.post-content img {
   -moz-transition: -moz-transform 0.4s ease-out;
   transition: transform 0.4s ease-out;
 }
+
 #ds-reset .ds-avatar img:hover {
   -webkit-transform: rotateZ(360deg);
   -moz-transform: rotateZ(360deg);
@@ -1345,6 +1361,13 @@ article.post-content img {
 
 #ds-reset .ds-powered-by {
   display: none;
+}
+
+#ds-reset {
+  padding: 1em;
+  background: white;
+  margin-top: 20px;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
 }
 
 #ds-thread {
@@ -1381,44 +1404,19 @@ article.post-content img {
 }
 
 
-.reset-all #ds-thread #ds-reset .ds-sort a ,
-.reset-all #ds-thread #ds-reset li.ds-tab a.ds-current
- {
-  background-color: transparent;
-  border: 1px solid rgba(0,0,0,0);
-  padding: .3em 1em;
 
+
+nav {
+  z-index: 100;
+}
+
+#app-info a,
+#app-info li a {
+  color: inherit;
 }
 
 
-.reset-all #ds-thread #ds-reset .ds-sort a:hover,
-.reset-all #ds-thread #ds-reset li.ds-tab a:hover {
-  background-color: transparent;
-  border: 1px solid rgba(0,0,0,0);
-  padding: .3em 1em;
 
 
-.reset-all #ds-thread #ds-reset .ds-sort a {
-  margin: 0 2px;
-}
-
-.reset-all #ds-thread #ds-reset .ds-textarea-wrapper textarea, 
-.reset-all #ds-thread #ds-reset .ds-textarea-wrapper .ds-hidden-text{
-
-}
-
-.reset-all #ds-thread #ds-reset .ds-post-button {
-  background-color: transparent;
-  background-image: none;
-}
-
-.reset-all #ds-thread #ds-reset .ds-textarea-wrapper,
-.reset-all #ds-reset .ds-gradient-bg {
-  background-image: none;
-}
-
-.reset-all {
-  padding: 20px 0;
-}
 
 

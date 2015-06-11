@@ -9,12 +9,6 @@ categories:
 ![](http://7xixe7.com1.z0.glb.clouddn.com/15-6-9/20146604.jpg)
 
 
-
-First Header | Second Header | Third Header
-:----------- | :-----------: | -----------:
-Left         | Center        | Right
-Left         | Center        | Right
-
 你觉得，它会改变一些什么吗？
 
 没有上手也没有体验不好多说什么，单从keynote 和[官网](http://apple.com/music)来看我觉得稍重了一点，东西很多，但是经验告诉我的是一些看上去很美好的 app 到最后我们都没啥机会用。比如人家都已经变成 Wallet 的 Passbook ，比如距离我们似乎依旧很远的 Pay。它在中国能不能有资格和网易虾米 QQ 一起玩呢？
