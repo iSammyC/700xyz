@@ -1162,7 +1162,6 @@ input[type=range] {
 .border-white  { border-color: #fff }
 
 .border-transparent {border: 1px solid rgba(0,0,0,.0625)}
-.border-simple { border: 1px solid #e9e9e9}
 
 .border-darken-1 { border-color: rgba(0,0,0,.0625) }
 .border-darken-2 { border-color: rgba(0,0,0,.125) }
@@ -1309,10 +1308,6 @@ box-shadow: 0 2px 2px 0 rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.3);
 
 */
 
-.hvr-bgdark:hover, .hvr-bgdark:focus {
-    box-shadow: inset 0 1px 2px 0 rgba(0,0,0,0.1);
-}
-
 .post-title a:hover {
   background-color: transparent;
 }
@@ -1425,28 +1420,3 @@ nav {
 
 
 
-
-.hvr-transparent a {
-  color: #FF2B2B;
-  text-decoration: none;
-}
-
-.hvr-transparent a:hover {
-  background-color: transparent;
-  text-decoration: none;
-}
-
-
-@media (min-width: 40em) {
-   .article-body { padding: 2em ;};
-}
-
-@media (min-width: 52em) {
-   .article-body { padding: 4em ;};
-}
-
-@media (min-width: 64em) {
-  .article-body { 
-    padding: 6em ;
-    margin-bottom: -3em;};
-}
