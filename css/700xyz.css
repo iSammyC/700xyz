@@ -1345,7 +1345,8 @@ input[type=range] {
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+  box-shadow: rgba(0,0,0,.3) 0 1px 3px;
+  border-radius: 4px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
@@ -1365,6 +1366,14 @@ box-shadow: 0 2px 2px 0 rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.3);
 0 5px 5px 0 rgba(0,0,0,0.24)
 
 */
+
+
+.card {
+  box-shadow: rgba(0,0,0,.3) 0 1px 3px;
+  border-radius: 4px;
+}
+
+
 
 .post-title a:hover {
   background-color: transparent;
@@ -1462,6 +1471,11 @@ a.wechat:hover > #qrcode {
 }
 
 
+.ds-post-options .ds-gradient-bg
+#ds-thread #ds-reset .ds-post-button {
+
+}
+
 
 
 nav {
@@ -1474,7 +1488,82 @@ nav {
 }
 
 
+.social-bar li {
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+
+.social-bar li svg {
+  background: white;
+  transition: background 0.4s ease-out;
+}
 
 
 
 
+
+a.facebook svg {
+  fill: #3B5998;
+}
+
+a.facebook svg:hover {
+  fill: #fff;
+  background-color: #3B5998;
+}
+
+a.twitter svg {
+  fill: #55ACEE;
+}
+
+a.twitter svg:hover {
+  fill: #fff;
+  background-color: #55ACEE;
+}
+
+a.douban svg {
+  fill: #2E963D;
+}
+
+a.douban svg:hover {
+  fill: #fff;
+  background-color: #2E963D;
+}
+
+
+
+a.wechat svg {
+  fill: #7ED321;
+}
+
+a.wechat svg:hover {
+  fill: #fff;
+  background-color: #7ED321;
+}
+
+
+a.weibo svg {
+  fill: #E6162D;
+}
+
+
+a.weibo svg:hover {
+  fill: #fff;
+  background-color: #E6162D;
+}
+
+
+a#appstore:hover  { 
+  background-color: black;
+  transition: background 0.4s ease-out;
+}
+
+
+a#p-cate:hover {
+  background-color: rgba(0,0,0,.6);
+  color: #fff;
+  transition: background 0.4s ease-out;
+}
+
+li.hvr-inset hover  {
+  box-shadow: inset 0 1px 3px 0 rgba(0,0,0,.3);
+}

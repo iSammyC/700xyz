@@ -7,27 +7,27 @@ layout: default
 
 <div class="sm-col sm-col-12 md-col-9 px2 ">
 
-  <header class="post-header bg-white py2 px3 " style="box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);">
+  <header class="post-header bg-white py2 px3 card">
     <div class="clearfix">
   	<div class="col-7 py2 inline-block">
     <h1 class="post-title m0"><a href="{{ post.url | prepend: site.baseurl }}" class="navy">{{ page.title }}</a></h1>
     <p class="post-meta tsm maroon">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
     </div>
     
-    <div class="md-hide mb3">
+    <div class="md-hide mb3 right">
     
-    <div class="left">
+    <div class="">
     <a href="{{ page.dllink }}"> <img src="{{ page.image }}" class=" border border-transparent " height="100" /></a>
     
     </div>
 
-    <div class="right" style="padding-top:35px;">
+    <div class="" style="padding-top:35px;">
     <div class="py2">
     by <a href="{{ page.website }}" class="gray p1">{{ page.seller }}</a>
     </div>
     <div>
-    <a href="{{ page.dllink }}" class="bold navy p1 col-6  bg-yellow  ">App Store | {{ page.price }}</a>
-    <a href="/{{ page.categories }}" class="bold navy p1 col-6 center bg-orange  ">{{ page.categories }}</a>
+    <a href="{{ page.dllink }}" class="bold navy p1 col-6  bg-white  ">App Store | {{ page.price }}</a>
+    <a href="/{{ page.categories }}" class="bold navy p1 col-6 center bg-white  ">{{ page.categories }}</a>
     </div>
     </div>
 
@@ -36,66 +36,19 @@ layout: default
   </div>
   </header>
 
-  <article class="post-content px3 py4 bg-white mt2" style="box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);">
+  <article class="post-content px3 py4 bg-white mt2 card">
     {{ content }}
   </article>
 
-<!-- Social Button HTML -->
-
-<!-- Twitter -->
-<a href="http://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.summary }}&via=sammycheung" target="_blank" class="share-btn twitter">
-    <i class="fa fa-twitter aqua"></i>
-</a>
-
-<!-- Google Plus -->
-<a href="https://plus.google.com/share?url=<BTN>" target="_blank" class="share-btn google-plus">
-    <i class="fa fa-google-plus"></i>
-</a>
-
-<!-- Facebook -->
-<a href="http://www.facebook.com/sharer/sharer.php?u=<URL>" target="_blank" class="share-btn facebook">
-    <i class="fa fa-facebook"></i>
-</a>
-
-<!-- StumbleUpon (url, title) -->
-<a href="http://www.stumbleupon.com/submit?url=<URL>&title=<TITLE>" target="_blank" class="share-btn stumbleupon">
-    <i class="fa fa-stumbleupon"></i>
-</a>
-
-<!-- Reddit (url, title) -->
-<a href="http://reddit.com/submit?url=<URL>&title=<TITLE>" target="_blank" class="share-btn reddit">
-    <i class="fa fa-reddit"></i>
-</a>
-
-<!-- LinkedIn -->
-<a href="http://www.linkedin.com/shareArticle?url=<URL>&title=<TITLE>&summary=<SUMMARY>&source=<SOURCE_URL>" target="_blank" class="share-btn linkedin">
-    <i class="fa fa-linkedin"></i>
-</a>
-
-<!-- Email -->
-<a href="mailto:?subject=<SUBJECT&body=<BODY>" target="_blank" class="share-btn email">
-    <i class="fa fa-envelope"></i>
-</a>
 
     
-  <div class="social-bar mt2 " style="box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);">
-    <ul class="block p2 bg-white list-reset">
-      <li class="inline-block p1"><a href="http://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.summary }}&via=sammycheung" target="_blank" class="share-btn twitter aqua"><i class="fa fa-twitter"></i></a>
-      </li>
+  <div class="social-bar mt3 md-hide">
 
-      <li class="inline-block p1"> 
-      <a href="http://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank" class="share-btn facebook blue"><i class="fa fa-facebook"></i></a>
-      </li>
-
-      <li class="inline-block p1"><a href="mailto:?subject={{ page.title}}?content={{ page.summary }}" target="_blank" class="share-btn email navy"><i class="fa fa-envelope"></i></a>
-      </li>
-
-      <li class="inline-block p1"> <a href="http://service.weibo.com/share/share.php?searchPic=true&url={{ site.url }}{{ page.url }}&title=[{{ page.title}}]_by_{{ page.seller }}--{{ page.summary }}(Read more on @700apps)&pic={{ page.image }}&appkey=2273335483&style=number&language=zh_cn&button=pubilish&sudaref=700apps.xyz" class="red"> <i class="fa fa-weibo" ></i> </a>
-      </li>
-
-      <li class="inline-block p1"> <a href="/" class="green wechat"> <i class="fa fa-wechat"></i> </a></li>
-  </ul>
+    {% include socialshare.html %}
+    
 	</div>
+
+
   
 	<div id="ds-thread" class="ds-thread" data-url="{{ page.url }}" data-title="{{ page.title }}" data-thread-key="{{ page.title }}">
     </div>
@@ -103,20 +56,28 @@ layout: default
 </div>
 
 
-<div id="app-info" class="sm-col sm-col-0 md-col-3  md-show" style="box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);">
+<div id="app-info" class="sm-col sm-col-0 md-col-3  md-show">
 
-<div class="p2 bg-white" >
-    <a href="/"> <img src="{{ page.image }}" class="mb2 border border-transparent" /></a>
+<div class="p2 bg-white card" >
+    <img src="{{ page.image }}" class="mb2 card" />
     <h1 class="h3 mt0">{{ page.title }}</h1>
     by <a href="{{ page.website }}" class="inline-block p1">{{ page.seller }}</a>
   </div>
 
-    <div class="bg-darken-2">
+  <div class="mt2">
 
-  <a href="{{ page.dllink }}" class="bold white block center bg-yellow py2">App Store | {{ page.price }}</a>
   
-  <a href="/{{ page.categories }}" class="bold white block center bg-orange  py2   ">{{ page.categories }}</a>
+  <a href="{{ page.dllink }}" class="bold block center bg-white py2 hvr-card" id="appstore"> 
+  <img src="http://7xixe7.com1.z0.glb.clouddn.com/15-6-9/16786407-Download_on_the_App_Store_Badge_US-UK_135x40.svg">
+  <br/><div class="yellow tlg">{{ page.price }}</div></a> 
+  
+  <a href="/{{ page.categories }}" class="mt2 bold white block center bg-white py2 hvr-card  " id="p-cate">{{ page.categories }}</a>
 
+  <div class="social-bar mt2 justify">
+
+    {% include socialshare.html %}
+    
+  </div>
  
 
 </div>
