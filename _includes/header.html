@@ -7,13 +7,20 @@
   <div class="container">
   <div class="col white p2  site-name">
   
-  <a href="/" class="button button-transparent tlg">700apps.<span class="red">x</span><span class="yellow">y</span><span class="blue">z</span></a>
+  <a href="/" class="button button-transparent tlg">
+  <span class="yellow">7</span><span class="orange">0</span><span class="red">0</span>apps.<span class="yellow">x</span><span class="orange">y</span><span class="red">z</span>
+  </a>
   </div>
 
   <div class="col-right p2 ">
-    
-    <a href="/about" class="t300 button button-transparent px2">About</a>
-    <a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="t300 button button-transparent px2">RSS</a>
+    <div class="overflow-hidden px2 py1 sm-show">
+    <input type="text" class="mb0 right fit field-dark" placeholder="Search">
+    </div>
+
+    <div class="sm-hide">
+      <div class="button"> <i class="fa fa-search"></i> </div>
+
+    </div>
   </div>
   </div>
 </nav>

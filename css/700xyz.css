@@ -808,6 +808,64 @@ hr {
 .field-light.is-error {
   border-color: #ff4136;
 }
+
+.field-dark {
+  color: white;
+  background-color: rgba(0,0,0,.25);
+  border: 1px solid rgba(0,0,0,.0625);
+  border-radius: 3px;
+}
+
+.field-dark::-webkit-input-placeholder {
+  color: rgba(255,255,255,.75);
+}
+
+.field-dark::-moz-placeholder {
+  color: rgba(255,255,255,.75);
+}
+
+.field-dark:-ms-input-placeholder {
+  color: rgba(255,255,255,.75);
+}
+
+.field-dark::placeholder {
+  color: rgba(255,255,255,.75);
+}
+
+.field-dark:focus {
+  outline: 0;
+  border: 1px solid rgba(255,255,255,.5);
+  box-shadow: 0 0 0 2px rgba(255,255,255,.25);
+}
+
+.field-dark:read-only:not(select) {
+  background-color: rgba(255,255,255,.25);
+}
+
+.field-dark.is-success {
+  border-color: #2ecc40;
+}
+
+.field-dark.is-success:focus {
+  box-shadow: 0 0 0 2px rgba(46, 204, 64, 0.5);
+}
+
+.field-dark.is-warning {
+  border-color: #ffdc00;
+}
+
+.field-dark.is-warning:focus {
+  box-shadow: 0 0 0 2px rgba(255, 220, 0, 0.5);
+}
+
+.field-dark:invalid,
+.field-dark.is-error {
+  border-color: #ff4136;
+}
+
+.field-dark.is-error:focus {
+  box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);
+}
 /* Basscss Input Range */
 
 input[type=range] {
@@ -1265,19 +1323,19 @@ input[type=range] {
 
 .red     { color: #FF2B2B }
 .yellow  { color: #FFDB2B }
-.blue    { color: #349AE8 }
+.blue    { color: #004B98 }
 
 .bg-red     { background-color: #FF5050 }
 .bg-yellow  { background-color: #FFE150 }
-.bg-blue    { background-color: #55ACEE }
+.bg-blue    { background-color: #004B98 }
 
 .border-red     { border-color: #FF7E7E }
 .border-yellow  { border-color: #FFE97E }
-.border-blue    { border-color: #81C3F5 }
+.border-blue    { border-color: #004B98 }
 
 
 .red a:not(.button) { color: #FF0000 }
-.blue a:not(.button) { color: #0E81DA }
+.blue a:not(.button) { color: #004B98 }
 .yellow a:not(.button) { color: #FFD300 }
 
 

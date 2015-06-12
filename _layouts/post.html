@@ -40,27 +40,66 @@ layout: default
     {{ content }}
   </article>
 
-  <div class="social-bar">
-     <ul class="block py2 list-reset">
-    <li class="inline-block p1"> <a href="/" class="aqua"> <i class="fa fa-twitter"></i>
-</li>
-    <li class="inline-block p1"> <a href="/" class="blue"> <i class="fa fa-facebook"></i> </a></li>
-    <li class="inline-block p1"> <a href="/" class="red"> <i class="fa fa-weibo" ></i> </a></li>
-    <li class="inline-block p1"> <a href="/" class="green wechat"> <i class="fa fa-wechat"></i> </a></li>
+<!-- Social Button HTML -->
+
+<!-- Twitter -->
+<a href="http://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.summary }}&via=sammycheung" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter aqua"></i>
+</a>
+
+<!-- Google Plus -->
+<a href="https://plus.google.com/share?url=<BTN>" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+</a>
+
+<!-- Facebook -->
+<a href="http://www.facebook.com/sharer/sharer.php?u=<URL>" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+</a>
+
+<!-- StumbleUpon (url, title) -->
+<a href="http://www.stumbleupon.com/submit?url=<URL>&title=<TITLE>" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+</a>
+
+<!-- Reddit (url, title) -->
+<a href="http://reddit.com/submit?url=<URL>&title=<TITLE>" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit"></i>
+</a>
+
+<!-- LinkedIn -->
+<a href="http://www.linkedin.com/shareArticle?url=<URL>&title=<TITLE>&summary=<SUMMARY>&source=<SOURCE_URL>" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+</a>
+
+<!-- Email -->
+<a href="mailto:?subject=<SUBJECT&body=<BODY>" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+</a>
+
+    
+  <div class="social-bar mt2 " style="box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);">
+    <ul class="block p2 bg-white list-reset">
+      <li class="inline-block p1"><a href="http://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.summary }}&via=sammycheung" target="_blank" class="share-btn twitter aqua"><i class="fa fa-twitter"></i></a>
+      </li>
+
+      <li class="inline-block p1"> 
+      <a href="http://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank" class="share-btn facebook blue"><i class="fa fa-facebook"></i></a>
+      </li>
+
+      <li class="inline-block p1"><a href="mailto:?subject={{ page.title}}?content={{ page.summary }}" target="_blank" class="share-btn email navy"><i class="fa fa-envelope"></i></a>
+      </li>
+
+      <li class="inline-block p1"> <a href="http://service.weibo.com/share/share.php?searchPic=true&url={{ site.url }}{{ page.url }}&title=[{{ page.title}}]_by_{{ page.seller }}--{{ page.summary }}(Read more on @700apps)&pic={{ page.image }}&appkey=2273335483&style=number&language=zh_cn&button=pubilish&sudaref=700apps.xyz" class="red"> <i class="fa fa-weibo" ></i> </a>
+      </li>
+
+      <li class="inline-block p1"> <a href="/" class="green wechat"> <i class="fa fa-wechat"></i> </a></li>
   </ul>
 	</div>
-
-  
-
-<input id="text" type="text" value="http://700apps.xyz{{ page.url }}" style="width:80%" class="hide" /><br />
-<div id="qrcode"></div>
-  
-
   
 	<div id="ds-thread" class="ds-thread" data-url="{{ page.url }}" data-title="{{ page.title }}" data-thread-key="{{ page.title }}">
     </div>
  
-	
 </div>
 
 
