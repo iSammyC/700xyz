@@ -58,10 +58,10 @@ layout: default
 
 <div id="app-info" class="sm-col sm-col-0 md-col-3  md-show">
 
-<div class="p2 bg-white card" >
-    <img src="{{ page.image }}" class="mb2 card" />
+<div class="p3 bg-white card" >
+    <img src="{{ page.image }}" class="mb2" />
     <h1 class="h3 mt0">{{ page.title }}</h1>
-    by <a href="{{ page.website }}" class="inline-block p1">{{ page.seller }}</a>
+    by <a href="{{ page.website }}" class="inline-block p1" style="color: #004B98;">{{ page.seller }}</a>
   </div>
 
   <div class="mt2">
@@ -73,7 +73,7 @@ layout: default
   
   <a href="/{{ page.categories }}" class="mt2 bold white block center bg-white py2 hvr-card  " id="p-cate">{{ page.categories }}</a>
 
-  <div class="social-bar mt2 justify">
+  <div class="social-bar mt2 ">
 
     {% include socialshare.html %}
     
